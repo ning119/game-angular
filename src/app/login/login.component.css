@@ -1,0 +1,77 @@
+/* จัดกึ่งกลาง container */
+.login-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f5f7fa;
+  }
+  
+  /* กรอบ Login */
+  .login-box {
+    width: 350px;
+    padding: 2rem;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  /* หัวข้อ */
+  .login-box h2 {
+    margin-bottom: 1.5rem;
+    color: #333;
+    font-size: 1.8rem;
+  }
+  
+  /* สไตล์ input */
+  .input-group {
+    margin-bottom: 1rem;
+    text-align: left;
+  }
+  
+  .input-group label {
+    font-size: 0.9rem;
+    color: #666;
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  
+  .input-group input {
+    width: 100%;
+    padding: 0.75rem;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    outline: none;
+  }
+  
+  .input-group input:focus {
+    border-color: #4a90e2;
+  }
+  
+  /* ปุ่ม Login */
+  .login-button {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #4a90e2;
+    border: none;
+    border-radius: 4px;
+    color: #ffffff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .login-button:hover {
+    background-color: #357ab7;
+  }
+  
+  /* ข้อความแสดงข้อผิดพลาด */
+  .error-message {
+    color: red;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    font-weight: bold;
+  }
+  

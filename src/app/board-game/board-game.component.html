@@ -1,0 +1,22 @@
+<div class="game-container">
+    <h1>Tic Tac Toe</h1>
+    <div class="scoreboard">
+      <div class="score">Player (X): {{ playerScore }}</div> 
+      <div class="score">Bot (O): {{ botScore }}</div>
+    </div>
+    <div class="board">
+      <div *ngFor="let cell of board; let i = index" 
+           class="cell" 
+           [ngClass]="{'x-cell': cell === 'X', 'o-cell': cell === 'O', 'winner-cell': winningCombination && winningCombination.includes(i)}"
+           (click)="makeMove(i)">
+        {{ cell }}
+      </div>
+    </div>
+    <button class="restart-button" (click)="resetGame()">Restart</button>
+    <div *ngIf="winner" class="result">{{ winner }} wins!</div>
+    <div *ngIf="isDraw" class="result">It's a draw!</div>
+</div>
+
+
+
+  

@@ -1,0 +1,22 @@
+<div class="login-container">
+    <div class="login-box">
+      <h2>เข้าสู่ระบบ</h2>
+      <form (ngSubmit)="loginWithEmail()">
+        <div class="input-group">
+          <label>Email:</label>
+          <input [(ngModel)]="user.email" name="email" type="email" required placeholder="Enter your email" />
+        </div>
+        
+        <div class="input-group">
+          <label>Password:</label>
+          <input [(ngModel)]="user.password" name="password" type="password" required placeholder="Enter your password" />
+        </div>
+  
+        <button type="submit" class="login-button">Login</button>
+  
+        <div *ngIf="errorMessage" class="error-message">
+          {{ errorMessage }}
+        </div>
+      </form>
+    </div>
+  </div>
