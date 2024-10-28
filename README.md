@@ -25,3 +25,43 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+
+
+### Prerequisites
+
+1. **Node.js** (Recommended: version 14 or higher)
+   - [Download and install Node.js](https://nodejs.org/)
+   - Verify installation with:
+     ```bash
+     node -v
+     npm -v
+     ```
+
+2. **Angular CLI**
+   - Install Angular CLI via npm:
+     ```bash
+     npm install -g @angular/cli
+     ```
+   - Verify the Angular CLI version:
+     ```bash
+     ng version
+     ```
+
+3. **Firebase CLI**
+   - Install Firebase CLI to connect with Firebase:
+     ```bash
+     npm install -g firebase-tools
+     ```
+   - Verify Firebase CLI installation:
+     ```bash
+     firebase --version
+     ```
+
+---
+
+### Installation Steps
+
+1. **Clone the Project from GitHub**
+   ```bash
+   git clone https://github.com/username/project-name.git
+   cd project-name
